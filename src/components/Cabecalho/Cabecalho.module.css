@@ -1,0 +1,25 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em clamp(1rem, 8%, 20em);
+    background-color: var(--preto);
+    color: var(--branco);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cabecalho img {
+    max-width: min(180px, 45vw);
+    height: auto;
+}
+
+.cabecalho img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 0.75em 1rem;
+    }
+}
